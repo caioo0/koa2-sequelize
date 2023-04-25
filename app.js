@@ -1,17 +1,7 @@
 const koa = require('koa')  //引入 koa
 const app = new koa() // 生命
 
-const Router = require("koa-router")  //引入路由
-const router = new Router()
-
-//添加一个入口
-router.get('/',ctx =>{
-    ctx.body = "我最帅!"
-})
-
-router.get('/user',ctx => {
-    ctx.body = "这是用户页"
-})
+const router = require("./router/router")  //引入路由
 
 /**
  * router.routers() 启动路由
