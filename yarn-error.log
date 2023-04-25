@@ -1,0 +1,32 @@
+Arguments: 
+  D:\Program Files\nodejs\node.exe d:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add koa
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files (x86)\Subversion\bin;d:\Program Files (x86)\Tencent\微信web开发者工具\dll;d:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Programdata\ffmpeg\bin;D:\Programdata\Anaconda3\chromedriver;D:\Programdata\Anaconda3\phantomjs-2.1.1\bin;d:\nvm;d:\Program Files\nodejs;C:\Program Files\CMake\bin;D:\Program Files\Go\bin;D:\BtSoft\mysql\MySQL5.6\bin;C:\Program Files\python;C:\Program Files\python\Scripts;D:\BtSoft\panel\script;D:\Program Files\TortoiseSVN\bin;D:\Programdata\Java\jdk1.8.0_202\bin;D:\Programdata\Java\scala\bin;D:\Programdata\Anaconda3;D:\Programdata\Anaconda3\Library\mingw-w64\bin;D:\Programdata\Anaconda3\Library\usr\bin;D:\Programdata\Anaconda3\Library\bin;D:\Programdata\Anaconda3\Scripts;C:\Users\choi\AppData\Local\Microsoft\WindowsApps;d:\Users\choi\AppData\Local\Programs\Microsoft VS Code\bin;d:\Program Files\JetBrains\WebStorm 2021.3\bin;;d:\nvm;d:\Program Files\nodejs;C:\Users\choi\go\bin;C:\Users\choi\.deno\bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.6.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ECONNREFUSED 127.0.0.1:1181
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1142:16)
+
+npm manifest: 
+  {
+    "name": "koa2-server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
