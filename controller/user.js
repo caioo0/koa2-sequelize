@@ -1,11 +1,21 @@
 const BaseController = require("./BaseController");
-const db = require('../database/dbquery')
-
+const UserModel  = require('../model/User')
+const Role  = require('../model/Role')
 class UserController extends BaseController {
     static async getUser(ctx) {
-        let sql = 'select * from user where status = 1'
-        const res = await db.query(sql)
-        ctx.body = BaseController.renderJsonSuccess(200, res)
+        // let sql = 'select * from user where status = 1'
+        // const res = await db.query(sql)
+        const res = await UserModel.findAll({
+            attributes: ['user', 'role_id'],
+            where:{
+                status:1
+            },
+            include: {
+            model: Role
+                     },
+            limit:1  //分页
+        })
+        ctx.body = BaseController.renderJsonSuccess(200, '查询成功',res)
     }
 
     static async getCurrectUser(ctx) {
