@@ -9,7 +9,7 @@ class RoleController extends BaseController {
     static async getCurrectRole(ctx, next){
 
         const name = ctx.request.body.name || ""
-        let msg  = '你真帅'
+        let msg  = 'role'
         let code = 200
         if (!name || name !== 'lurengao') {
             code = 400

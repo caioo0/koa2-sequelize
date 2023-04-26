@@ -1,8 +1,11 @@
 const BaseController = require("./BaseController");
+const db = require('../database/dbquery')
 
 class UserController extends BaseController {
     static async getUser(ctx) {
-        ctx.body = BaseController.renderJsonSuccess(200, '这是用户页')
+        let sql = 'select * from user where status = 1'
+        const res = await db.query(sql)
+        ctx.body = BaseController.renderJsonSuccess(200, res)
     }
 
     static async getCurrectUser(ctx) {
