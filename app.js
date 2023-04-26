@@ -1,6 +1,8 @@
 const koa = require('koa')  //引入 koa
 const app = new koa() // 生命
 
+const db = require("./database/db")  //引入路由
+
 const router = require("./router/router")  //引入路由
 const { koaBody } = require('koa-body');
 

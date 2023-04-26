@@ -1,5 +1,5 @@
-const Sequelize = require('sequelizze')
-const config = requiere('./config')
+const Sequelize = require('sequelize')
+const config = require('./config')
 
 console.log('init sequelize...')
 
@@ -29,7 +29,7 @@ const sequelize = new Sequelize(config.database,config.username,config.password,
 
 //测试是否能联通
 
-sequelize.authenticate().then()(() => {
+sequelize.authenticate().then(() => {
         console.log("连接成功");
     }).catch(err => {
         console.log("连接失败",err);
